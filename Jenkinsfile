@@ -9,9 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh '''echo -n "Npm Version:"
-npm --version
-echo -en "\\nNode Version:"
+        sh '''npm --version
 node --version
 npm install'''
       }
