@@ -10,8 +10,8 @@ pipeline {
     stage('Build') {
       steps {
         sh '''npm --version
-node --version
-npm install'''
+        node --version
+        npm install'''
       }
     }
     stage('Test') {
